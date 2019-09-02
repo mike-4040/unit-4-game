@@ -12,7 +12,6 @@ $(document).ready(function() {
 
   $('img').click(function() {
     score += parseInt($(this).attr('value'));
-    // $(this).animate({opacity: 0.25});
     $('#score').text(score);
     console.log(score);
 
@@ -30,11 +29,8 @@ function restart() {
   $('#wins').text(wins);
   $('#losses').text(losses);
 
-  // goal = randomInRange(goalMin, goalMax);
-  // score = 0;
-
   $('#goal').text(goal = randomInRange(goalMin, goalMax));
-  $('#score').text( score = 0);
+  $('#score').text(score = 0);
 
   $('img').each(function() {
     $(this).attr('value', randomInRange(1, crystalMax));

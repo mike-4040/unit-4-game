@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <!-- empty so far-->
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
@@ -19,33 +21,46 @@
   <div class="container">
     <div class="jumbotron pt-3 pb-2">
       <h1 class="display-4 text-center">Crystal Collector</h1>
-      <hr class="my-4">
-      <p> You will be given <span class="text-info">the Goal</span> - a random number at the start of the game.</p>
-      <p> There are four crystals below. By clicking on a crystal you will add a specific amount of points to the Score. The value of each crystal is hidden from you until you click on it.
+      <hr class="my-3">
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+          aria-expanded="false" aria-controls="collapseExample">
+          Rules
+        </button>
       </p>
-      <p><i class="fas fa-exclamation"></i> <span class="text-success font-weight-bold">You win the game by matching the Score to the Goal.</span> <span class="text-warning font-weight-bold">You lost the game if the Score goes above the Goal.</span></p>
-    </ul>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <p> You will be given <span class="text-info font-weight-bold">the Goal</span> - a random number at the start
+            of the game.</p>
+          <p> There are four crystals below. By clicking on a crystal you will add a specific amount of points to the
+            Score. The value of each crystal is hidden from you until you click on it.
+          </p>
+          <p><i class="fas fa-exclamation"></i> <span class="text-success font-weight-bold">You win the game by matching
+              the Score to the Goal.</span> <span class="text-warning font-weight-bold">You lost the game if the Score
+              goes above the Goal.</span></p>
+        </div>
+      </div>
     </div>
     <div class="row">
-      <div class="col-6 col-md-4">
+      <div class="d-flex flex-column col-6 col-md-4">
         <h4 class="text-center text-primary">Score</h4>
-        <p id="score" class="display-1 border border-primary text-center py-4 text-primary"></p>
+        <p id="score" class="display-1 border border-primary text-center text-primary mt-auto py-4 h-100"></p>
       </div>
 
-      <div class="col-6 col-md-4">
+      <div class="d-flex flex-column col-6 col-md-4">
         <h4 class="text-center text-info">Goal</h4>
-        <p id="goal" class="display-1 border border-info text-center py-4 text-info"></p>
+        <p id="goal" class="display-1 border border-info text-center text-info mt-auto py-4 h-100"></p>
       </div>
 
-      <div class="col-sm-12 col-md-4">
+      <div class="col-12 col-md-4">
         <div class="row">
           <div class="col-6 col-md-12">
             <h4 class="text-center text-success">Wins</h4>
-            <p id="wins" class="h1 border border-success text-center py-2 text-success"></p>
+            <p id="wins" class="h1 border border-success text-center text-success py-2"></p>
           </div>
           <div class="col-6 col-md-12">
             <h4 class="text-center text-warning">Losses</h4>
-            <p id="losses" class="h1 border border-warning text-center py-2 text-warning"></p>
+            <p id="losses" class="h1 border border-warning text-center text-warning py-2 mb-3"></p>
           </div>
         </div>
       </div>
