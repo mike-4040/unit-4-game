@@ -17,40 +17,37 @@
 
 <body>
   <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron pb-2">
       <h1 class="display-4 text-center">Cristal Collector</h1>
       <hr class="my-4">
-      <ul class="list-group">
-      <li class="list-group-item"><i class="fas fa-info-circle"></i> You will be given a random number at the start of the game.</li>
-      <li class="list-group-item"><i class="fas fa-info-circle"></i> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total
-        score.</li>
-      <li class="list-group-item"><i class="fas fa-info-circle"></i> You win the game by matching your total score to the random number. You lost the game if your total score goes
-        above the random number.</li>
-      <li class="list-group-item"><i class="fas fa-info-circle"></i> 
+      <p> You will be given <span class="text-info">the Goal</span> - a random number at the start of the game.</p>
+      <p> There are four crystals below. By clicking on a crystal you will add a specific amount of points to the Score.</p>
+      <p> 
         The value of each crystal is hidden from you until you click on it.
-      </li>
+      </p>
+      <p><i class="fas fa-exclamation"></i> <span class="text-success font-weight-bold">You win the game by matching the Score to the Goal.</span> <span class="text-warning font-weight-bold">You lost the game if the Score goes above the Goal.</span></p>
     </ul>
     </div>
     <div class="row">
-      <div class="col-4">
-        <h4 class="text-center">Score</h4>
-        <p id="score" class="display-1 border border-primary text-center py-4"></p>
+      <div class="col-6 col-md-4">
+        <h4 class="text-center text-primary">Score</h4>
+        <p id="score" class="display-1 border border-primary text-center py-4 text-primary"></p>
       </div>
-      <div class="col-4">
-        <h4 class="text-center">Goal</h4>
-        <p id="goal" class="display-1 border border-primary text-center py-4"></p>
+
+      <div class="col-6 col-md-4">
+        <h4 class="text-center text-info">Goal</h4>
+        <p id="goal" class="display-1 border border-info text-center py-4 text-info"></p>
       </div>
-      <div class="col-4">
+
+      <div class="col-sm-12 col-md-4">
         <div class="row">
-          <div class="col-12">
-            <h4 class="text-center">Wins</h4>
-            <p id="wins" class="h1 border border-primary text-center py-2 text-success"></p>
+          <div class="col-6 col-md-12">
+            <h4 class="text-center text-success">Wins</h4>
+            <p id="wins" class="h1 border border-success text-center py-2 text-success"></p>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <h4 class="text-center">Losses</h4>
-            <p id="losses" class="h1 border border-primary text-center py-2 text-warning"></p>
+          <div class="col-6 col-md-12">
+            <h4 class="text-center text-warning">Losses</h4>
+            <p id="losses" class="h1 border border-warning text-center py-2 text-warning"></p>
           </div>
         </div>
       </div>
