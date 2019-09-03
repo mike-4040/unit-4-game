@@ -10,7 +10,7 @@ $(document).ready(function() {
   restart();
 
   $('img').click(function() {
-    score += parseInt($(this).attr('value'));
+    score += parseInt($(this).attr('numValue'));
     $('#score').text(score);
 
     if (score == goal) {
@@ -27,12 +27,13 @@ function restart() {
   $('#wins').text(wins);
   $('#losses').text(losses);
 
-  $('#goal').text(goal = randomInRange(goalRange));
-  $('#score').text(score = 0);
+  $('#goal').text((goal = randomInRange(goalRange)));
+  $('#score').text((score = 0));
 
   $('img').each(function() {
-    $(this).attr('value', randomInRange(crystalRange));
+    $(this).attr('numValue', randomInRange(crystalRange));
   });
 }
 
-let randomInRange = (arr) => arr[0] + Math.floor(Math.random() * (arr[1] - arr[0] + 1));
+let randomInRange = arr =>
+  arr[0] + Math.floor(Math.random() * (arr[1] - arr[0] + 1));
