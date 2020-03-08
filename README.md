@@ -1,5 +1,8 @@
-# unit-4-game
-jQuery Homework
+# Crystal Collector
+UCSD Code Camp Assignment
+
+# Learning
+- jQuery
 
 Wireframe is here: https://balsamiq.cloud/sjmm4r7/pjlbfsv
 
